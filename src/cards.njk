@@ -1,0 +1,17 @@
+---
+pagination:
+  data: collections.posts
+  size: 2
+  alias: cards
+permalink: "cards/page-{{ pagination.pageNumber }}/index.html"
+eleventyExcludeFromCollections: true
+---
+{% for card in cards %}
+  {% include "layouts/card.njk" %}
+{% endfor %}
+
+{% if pagination.next %}
+  <div hx-get="cards/page-{{ pagination.pageNumber + 1 }}/index.html" hx-trigger="intersect once" hx-swap="outerHTML">
+    <div class="loading-indicator">Loading next page...</div>
+  </div>
+{% endif %}

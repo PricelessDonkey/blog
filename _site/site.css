@@ -1,0 +1,227 @@
+:root {
+  --card-w-min: 260px;
+  --card-w: 320px;
+  --gap: 1rem;
+  --radius: 12px;
+  --shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  padding: 6px;
+  background-color: #e2e7dc;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #e88e5a;
+  color: #f9dac1;
+  border-radius: var(--radius);
+}
+
+header button {
+  background: transparent;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+header button:hover {
+  background-color: #bccccf;
+  border: none;
+}
+
+header h1 {
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Mobile-first header tweaks */
+header {
+  padding: 0.5rem 1rem;   /* smaller padding for phones */
+}
+
+header h1 {
+  font-size: 1.25rem;     /* ~20px */
+  line-height: 1.2;
+}
+
+header button {
+  font-size: 1.5rem;      /* smaller icon/button text */
+  margin-top: 0.5rem;
+}
+
+/* Medium screens (tablet-ish) */
+@media (min-width: 600px) {
+  header {
+    padding: 0.75rem 1.5rem;
+  }
+  header h1 {
+    font-size: 1.75rem;   /* ~28px */
+  }
+  header button {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Larger screens (desktop, but compact) */
+@media (min-width: 1024px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  header h1 {
+    font-size: 2rem;      /* ~32px but more compact than your current */
+  }
+  header button {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Container: centers the row and hard-caps it to 3 cards wide */
+#card-container {
+  display: flex;
+  flex-direction: row;;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  justify-content: center;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* Card: fixed size, mobile-first, flat modern look */
+.card {
+  width: clamp(var(--card-w-min), 90vw, var(--card-w));
+  background: #fff;
+  border-radius: var(--radius);
+  border: 1px solid #e5e7eb; /* subtle, modern gray */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04); /* very light shadow */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Image area: fixed ratio; image fills & crops nicely */
+.card__media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #f9fafb; /* lighter neutral background */
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.card__media > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content */
+.card__body {
+  padding: 0.85rem 0 0; /* remove extra side padding since card already has */
+}
+
+.card__title {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827; /* modern darker neutral */
+  line-height: 1.3;
+}
+
+.card__text {
+  margin: 0;
+  margin-top: 4px;
+  color: #6b7280; /* softer gray */
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Links are clean & inherit color */
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Modern pill button */
+.card button {
+  margin-top: 0.75rem;
+  align-self: start;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: none;
+  background: #f3f4f6;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.card button:hover {
+  background: #e5e7eb;
+}
+
+#back-button-container {
+  display: flex;
+}
+
+/* Add spacing below headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Add spacing between paragraphs */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Ensure lists have spacing and list item markers */
+ul, ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 20px; /* Provides indentation for list markers */
+}
+
+/* Add spacing between list items */
+li {
+  margin-bottom: 0.5rem;
+}
+
+
+.doto-research {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 0;
+}

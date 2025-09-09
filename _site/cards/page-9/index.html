@@ -1,0 +1,22 @@
+
+  <div class="card" hx-get="/partials/posts/second-post copy 7/" hx-target="#card-container" hx-swap="innerHTML" hx-push-url="/posts/second-post copy 7/">
+  <h2 class="card__title">Second Post</h2>
+  
+  <img class="card__media" src="/images/second-post-image.jpg" alt="Second Post Image">
+  
+  <p class="card__text">A description for my second blog post.</p>
+</div>
+
+  <div class="card" hx-get="/partials/posts/second-post copy 8/" hx-target="#card-container" hx-swap="innerHTML" hx-push-url="/posts/second-post copy 8/">
+  <h2 class="card__title">Second Post</h2>
+  
+  <img class="card__media" src="/images/second-post-image.jpg" alt="Second Post Image">
+  
+  <p class="card__text">A description for my second blog post.</p>
+</div>
+
+
+
+  <div hx-get="cards/page-10/index.html" hx-trigger="intersect once" hx-swap="outerHTML">
+    <div class="loading-indicator">Loading next page...</div>
+  </div>

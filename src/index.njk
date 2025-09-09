@@ -1,0 +1,10 @@
+---
+layout: "layouts/base.njk"
+title: "Home"
+---
+
+<div id="card-container">
+  <div hx-get="/cards/page-0/" hx-trigger="intersect once" hx-swap="outerHTML">
+    <div class="loading-indicator">Loading cards...</div>
+  </div>
+</div>

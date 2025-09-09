@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/site.css">
+</head>
+<body hx-boost="true">
+<header class="doto-research"> <h1>Deep Research</h1> <button hx-get="/" hx-target="body" hx-push-url="true"> 🏠 </button> </header>
+
+    <main>
+        
+<div id="card-container">
+  <div hx-get="/cards/page-0/" hx-trigger="intersect once" hx-swap="outerHTML">
+    <div class="loading-indicator">Loading cards...</div>
+  </div>
+</div>
+    </main>
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+</body>
+</html>
