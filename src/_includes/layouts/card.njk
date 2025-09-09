@@ -1,4 +1,4 @@
-<div class="card" hx-get="/partials/posts/{{ card.fileSlug }}/" hx-target="#card-container" hx-swap="innerHTML" hx-push-url="/posts/{{ card.fileSlug }}/">
+<div class="card" hx-get="/partials/posts/{{ card.fileSlug }}/" hx-target="#card-container" hx-swap="outerHTML show:window:top" hx-push-url="/posts/{{ card.fileSlug }}/">
   <h2 class="card__title">{{ card.data.title }}</h2>
   {% if card.data.image %}
   <img class="card__media" src="{{ card.data.image }}" alt="{{ card.data.title }} Image">
