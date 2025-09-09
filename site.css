@@ -1,7 +1,7 @@
 :root {
   --card-w-min: 260px;
   --card-w: 320px;
-  --gap: 1rem;
+  --gap: .85rem;
   --radius: 12px;
   --shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
@@ -13,6 +13,7 @@ body {
   margin: auto;
   padding: 6px;
   background-color: #e2e7dc;
+  color: #0e2d58;
 }
 
 header {
@@ -115,7 +116,7 @@ header button {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
