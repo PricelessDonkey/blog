@@ -128,7 +128,6 @@ header button {
 /* Image area: fixed ratio; image fills & crops nicely */
 .card__media {
   width: 100%;
-  aspect-ratio: 16 / 9;
   background: #f9fafb; /* lighter neutral background */
   position: relative;
   border-radius: var(--radius);
