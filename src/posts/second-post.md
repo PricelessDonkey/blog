@@ -1,6 +1,6 @@
 ---
 title: "Kangaba-Paris"
-description: "a 2018 collaboration between French synthesist Jean-Philippe Rykiel and Malian balafon master Lansiné Kouyaté"
+description: "A 2018 collaboration between French synthesist Jean-Philippe Rykiel and Malian balafon master Lansiné Kouyaté"
 layout: "full-post.njk"
 tags: "posts"
 image: "/images/second-post-image.jpg"
