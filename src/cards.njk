@@ -6,7 +6,7 @@ pagination:
 permalink: "cards/page-{{ pagination.pageNumber }}/index.html"
 eleventyExcludeFromCollections: true
 ---
-{% for card in cards %}
+{% for card in cards | reverse %}
   {% include "layouts/card.njk" %}
 {% endfor %}
 

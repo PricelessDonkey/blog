@@ -64,17 +64,18 @@ Rykiel responds with modal, atmosphere-driven improvisation—creating a nuanced
 	•	Prepared piano (À la chasse): mirrors balafon percussiveness.
 	•	Synthesizer (15 Août): culminates in a purely electronic texture, embodying the “Paris” pole.
 
-Track-by-Track Breakdown
+### Track-by-Track Breakdown
 
-Track Name	Instruments Used	Conceptual Role
-Kangaba-Paris	Piano, Balafon	Establishes the core dialogue.
-Jeux d’amour	Piano, Balafon	Continues intimate, virtuosic conversation.
-La jeune fille et l’hippopotame	Piano, Balafon	Develops lyrical and melodic interplay.
-Le lion	Piano, Balafon	Explores dynamic, rhythmic energy.
-Paroles de sage	Piano, Balafon	Returns to meditative, lyrical theme.
-Qu’est-ce qu’on a fait là?	Piano, Balafon	Improvisational and conversational.
-À la chasse	Prepared Piano, Balafon, Karignan	Percussive synthesis: prepared piano mirrors balafon; karignan adds texture.
-15 Août	Synthesizer, Piano, Balafon	Futurist culmination: synthesizer introduces pure technology.
+| Track Name                   | Instruments Used                          | Conceptual Role                                                     |
+|------------------------------|-------------------------------------------|---------------------------------------------------------------------|
+| Kangaba-Paris                | Piano, Balafon                            | Establishes the core dialogue.                                      |
+| Jeux d’amour                 | Piano, Balafon                            | Continues intimate, virtuosic conversation.                         |
+| La jeune fille et l’hippopotame | Piano, Balafon                         | Develops lyrical and melodic interplay.                             |
+| Le lion                      | Piano, Balafon                            | Explores dynamic, rhythmic energy.                                  |
+| Paroles de sage              | Piano, Balafon                            | Returns to meditative, lyrical theme.                               |
+| Qu’est-ce qu’on a fait là?   | Piano, Balafon                            | Improvisational and conversational.                                 |
+| À la chasse                  | Prepared Piano, Balafon, Karignan         | Percussive synthesis: prepared piano mirrors balafon; karignan adds texture. |
+| 15 Août                      | Synthesizer, Piano, Balafon               | Futurist culmination: synthesizer introduces pure technology.       |
 
 ### 4. The Production and Recording Environment
 	•	Engineered by Philippe Teissier Du Cros (Jazz Sound Engineer of the Year, 2018).

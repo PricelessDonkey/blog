@@ -4,6 +4,12 @@
   --gap: .85rem;
   --radius: 12px;
   --shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  --tbl-bg: #ffffff;
+  --tbl-fg: #0f172a;            /* slate-900 */
+  --tbl-muted: #64748b;         /* slate-500 */
+  --tbl-border: #e5e7eb;        /* gray-200 */
+  --tbl-stripe: #f9fafb;        /* gray-50 */
+  --tbl-hover: #f3f4f6;         /* gray-100 */
 }
 
 body {
@@ -221,4 +227,56 @@ li {
   font-family: "Finger Paint", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;     /* enables rounded corners & spacing */
+  border-spacing: 0;
+  background: var(--tbl-bg);
+  color: var(--tbl-fg);
+  font: 500 0.95rem/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  border: 1px solid var(--tbl-border);
+  border-radius: 12px;
+  overflow: hidden;              /* rounds thead/tbody corners */
+}
+
+/* Header */
+table thead th {
+  text-align: left;
+  padding: 0.9rem 1rem;
+  letter-spacing: .02em;
+  font-weight: 650;
+  color: var(--tbl-muted);
+  background: var(--tbl-stripe);
+  border-bottom: 1px solid var(--tbl-border);
+  white-space: nowrap;
+}
+
+/* Cells */
+table td {
+  padding: 0.85rem 1rem;
+  vertical-align: top;
+  border-bottom: 1px solid var(--tbl-border);
+}
+
+/* Zebra striping */
+table tbody tr:nth-child(odd) td {
+  background: var(--tbl-stripe);
+}
+
+/* Row hover */
+table tbody tr:hover td {
+  background: var(--tbl-hover);
+}
+
+/* Compact spacing on small screens */
+@media (max-width: 640px) {
+  table thead th,
+  table td {
+    padding: 0.7rem 0.8rem;
+  }
+  table{
+    font-size: 0.92rem;
+  }
 }
