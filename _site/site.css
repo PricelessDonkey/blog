@@ -49,6 +49,7 @@ header button:hover {
 header h1 {
   font-weight: 400;
   font-style: normal;
+  font-size: 3em;
 }
 
 /* Mobile-first header tweaks */
@@ -217,11 +218,8 @@ li {
 }
 
 
-.doto-research {
-  font-family: "Doto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
+.finger-paint-regular {
+  font-family: "Finger Paint", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "ROND" 0;
 }
