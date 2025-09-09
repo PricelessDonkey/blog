@@ -1,6 +1,6 @@
 ---
 title: "Ecstatic jazz "
-description: "A holy riot that seizes you and burns you alive in sound."
+description: "A Holy Riot: An Analysis of Spiritual Jazz and Its Ecstatic Legacy"
 layout: "full-post.njk"
 tags: "posts"
 image: "/images/first-post-image.jpg"
