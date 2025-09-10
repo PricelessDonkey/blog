@@ -11,11 +11,16 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👀</text></svg>">
 </head>
 <body>
-<header class="finger-paint-regular"> <h1>Deep Research</h1> <button onclick="window.history.back()"> 🏠 </button> </header>
+<header>
+  <div class="header-inner">
+    <h1> Deep Research</h1>
+    <a class="back-button" href="/"> 🏠 </a>
+  </div>
+</header>
 
     <main hx-history-elt>
         
-<div id="card-container">
+<div id="card-container" hx-boost="true">
   <div hx-get="/cards/page-0/" hx-trigger="intersect once" hx-swap="outerHTML">
     <div class="loading-indicator">Loading cards...</div>
   </div>

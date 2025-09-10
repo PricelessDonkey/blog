@@ -3,7 +3,7 @@ layout: "layouts/base.njk"
 title: "Deep Research"
 ---
 
-<div id="card-container">
+<div id="card-container" hx-boost="true">
   <div hx-get="/cards/page-0/" hx-trigger="intersect once" hx-swap="outerHTML">
     <div class="loading-indicator">Loading cards...</div>
   </div>
